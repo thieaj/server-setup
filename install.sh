@@ -1,4 +1,5 @@
 #TODO:
+#!/bin/bash
 mkdir install && cd install || exit
 git clone https://github.com/0xtaj/server-setup
 chmod +x install.sh
