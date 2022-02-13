@@ -1,9 +1,4 @@
 #!/bin/bash
-mkdir install && cd install || exit
-# shellcheck disable=SC1128
-git clone https://github.com/0xtaj/server-setup
-chmod +x install.sh
-./install.sh
 # Check for update and upgrade to latest versions
 apt-get update && apt-get upgrade -y
 # Install Docker
