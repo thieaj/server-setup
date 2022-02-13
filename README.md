@@ -1,4 +1,4 @@
-# Self-Host Server Configuration Install Script
+# Self-Hosted Server Configuration Script
 
 This script is what I consider a "base" Ubuntu/Debian install configuration.
 
