@@ -1,6 +1,6 @@
-#TODO:
 #!/bin/bash
 mkdir install && cd install || exit
+# shellcheck disable=SC1128
 git clone https://github.com/0xtaj/server-setup
 chmod +x install.sh
 ./install.sh
@@ -14,7 +14,6 @@ sudo sh get-docker.sh
 sudo systemctl start docker
 # Enable Docker on boot
 sudo systemctl enable docker
-#sudo usermod -a -G docker <username>
 # Make a persistent directory for Docker Compose v2
 mkdir -p ~/.docker/cli-plugins/
 # Download Docker Compose v2
