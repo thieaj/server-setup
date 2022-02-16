@@ -19,3 +19,4 @@ chmod +x ~/.docker/cli-plugins/docker-compose
 curl -fL https://raw.githubusercontent.com/docker/compose-cli/main/scripts/install/install_linux.sh | sh
 apt-get install unattended-upgrades
 apt install docker-compose
+dpkg-reconfigure unattended-upgrades
