@@ -17,3 +17,5 @@ curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compo
 chmod +x ~/.docker/cli-plugins/docker-compose
 # Install Docker Compose v2
 curl -fL https://raw.githubusercontent.com/docker/compose-cli/main/scripts/install/install_linux.sh | sh
+apt-get install unattended-upgrades
+apt install docker-compose
