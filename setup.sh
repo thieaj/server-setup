@@ -1,3 +1,4 @@
+#TODO: Figure out the docker-compose issue at the end of this script.
 #!/bin/bash
 # Check for update and upgrade to latest versions
 apt-get update && apt-get upgrade -y
@@ -17,6 +18,9 @@ curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compo
 chmod +x ~/.docker/cli-plugins/docker-compose
 # Install Docker Compose v2
 curl -fL https://raw.githubusercontent.com/docker/compose-cli/main/scripts/install/install_linux.sh | sh
+# Enable unattended upgrades in Ubuntu.
 apt-get install unattended-upgrades
-apt install docker-compose
+# Confirms unattended upgrades in Ubuntu.
 dpkg-reconfigure unattended-upgrades
+# I dont know why Docker is doing this, post install, but it wants this specific version of docker-compose installed. Beats me. Will review later. 
+apt install docker-compose
